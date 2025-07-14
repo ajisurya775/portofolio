@@ -5,6 +5,7 @@ module.exports = {
     "./src/input.css",
     "./node_modules/flowbite/**/*.js"
   ],
+  darkMode: 'class',
   theme: {
     fontFamily:{
       'poppins': 'Poppins'
