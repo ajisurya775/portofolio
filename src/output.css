@@ -1736,6 +1736,22 @@ input:checked + .toggle-bg {
   height: 20rem;
 }
 
+.h-\[26rem\] {
+  height: 26rem;
+}
+
+.h-28 {
+  height: 7rem;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.h-36 {
+  height: 9rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1794,6 +1810,10 @@ input:checked + .toggle-bg {
 
 .w-\[22rem\] {
   width: 22rem;
+}
+
+.w-\[26rem\] {
+  width: 26rem;
 }
 
 .max-w-screen-xl {
