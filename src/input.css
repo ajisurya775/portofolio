@@ -2,7 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 @import "flowbite";
-
-section + section {
-  @apply mt-10 py-20; /* atau mt-section-gap kalau kamu bikin custom spacing */
-}
