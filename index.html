@@ -13,16 +13,16 @@
         rel="stylesheet">
 </head>
 
-<body class="font-poppins bg-gradient-to-br from-black to-blue-900">
+<body class="font-poppins bg-gray-900 text-gray-100">
 
     <header>
-        <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <nav class="bg-gray-800 border-b border-gray-700 shadow-sm">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Alex</span>
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-indigo-400">Alex</span>
                 </a>
                 <button data-collapse-toggle="navbar-default" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                     aria-controls="navbar-default" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -33,23 +33,23 @@
                 </button>
                 <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                     <ul
-                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-700 rounded-lg bg-gray-800 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
                         <li>
                             <a href="#"
-                                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                                class="block py-2 px-3 text-white bg-indigo-600 rounded md:bg-transparent md:text-indigo-400 md:p-0"
                                 aria-current="page">Home</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                                class="block py-2 px-3 text-gray-400 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-indigo-400 md:p-0">About</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Porto</a>
+                                class="block py-2 px-3 text-gray-400 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-indigo-400 md:p-0">Portfolio</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                                class="block py-2 px-3 text-gray-400 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-indigo-400 md:p-0">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -59,33 +59,35 @@
 
     <main>
 
-        <section class="text-white py-20">
-            <div class="container">
-                <div class="grid grid-cols-1 md:grid-cols-2  justify-between items-center gap-5 py-10">
-                    <div class=" mx-auto">
+        <section class="py-20 bg-gradient-to-br from-gray-800 to-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-10 py-10">
+                    <div class="mx-auto">
                         <img src="assets/images/profile_ajisurya.jpg" alt="image"
-                            class="rounded-full w-80 h-80  border-4 border-white hover:scale-105 transition-transform duration-300">
+                            class="rounded-full w-80 h-80 border-4 border-white shadow-lg hover:scale-105 transition-transform duration-300">
                     </div>
 
-                    <div class="w-96 mx-auto">
-                        <h1 class="text-4xl font-bold">Hello, I'm Ajisurya</h1>
-                        <p class="mt-3">A passionate web developer with a love for creating dynamic and
+                    <div class="w-full md:w-96 mx-auto">
+                        <h1 class="text-4xl font-bold text-white">Hello, I'm Ajisurya</h1>
+                        <p class="mt-3 text-gray-300">A passionate web developer with a love for creating dynamic and
                             responsive web applications.</p>
-                        <button class="mt-5 py-2 px-6 bg-blue-50 rounded-md text-black">Get
-                            Started</button>
+                        <a href="#about-me"
+                            class="mt-5 block w-full text-center py-3 px-6 bg-indigo-600 text-white rounded-md shadow hover:bg-indigo-700 transition-colors duration-300">
+                            Get Started
+                        </a>
+
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="text-white py-20">
+        <section class="py-20 bg-gray-800" id="about-me">
             <div class="container mx-auto px-6">
-                <h1 class="text-3xl md:text-4xl font-bold mb-10 text-center">About Me</h1>
+                <h1 class="text-3xl md:text-4xl font-bold mb-10 text-center text-white">About Me</h1>
 
                 <div class="grid md:grid-cols-2 gap-10 items-center">
-                    <!-- Text and Skills -->
                     <div class="space-y-6">
-                        <p class="text-lg leading-relaxed text-center md:text-left">
+                        <p class="text-lg leading-relaxed text-gray-300 text-center md:text-left sm:text-center">
                             I am a Backend Developer with over 3 years of experience in building web-based systems using
                             PHP (Laravel), MySQL, and REST APIs. I focus on code efficiency, optimized database
                             structures,
@@ -94,68 +96,114 @@
                             and easy to maintain.
                         </p>
 
-                        <!-- Skill Icons Group -->
-                        <div
-                            class="grid grid-cols-3 md:grid-cols-5 gap-3 justify-center bg-white p-3 pb-5 rounded-xl shadow-lg">
+                        <h1 class="font-bold text-2xl">My Skill</h1>
+                        <div class="overflow-x-hidden pb-4 mt-3 w-80 md:w-full">
+                            <div id="skillScroll" class="animate-scroll">
+                                <div class="flex gap-4 mx-auto px-4">
+                                    <!-- Laravel -->
+                                    <div
+                                        class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700">
+                                        <div
+                                            class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white">
+                                            <img src="assets/images/icon/laravel_icon.png" alt="Laravel"
+                                                class="w-16 h-16 object-contain" />
+                                        </div>
+                                        <span class="text-sm font-medium text-gray-300 mt-auto">Laravel</span>
+                                    </div>
 
-                            <!-- Laravel -->
-                            <div class="flex items-center justify-center">
-                                <img src="assets/images/icon/laravel_icon.png" alt="Laravel"
-                                    class="w-24 h-24 object-contain hover:scale-110 transition-transform duration-300" />
-                            </div>
-                            <!-- Bootstrap -->
-                            <div class="flex items-center justify-center">
-                                <img src="assets/images/icon/bootsraps_icon.png" alt="Bootstrap"
-                                    class="w-12 h-12 object-contain hover:scale-110 transition-transform duration-300" />
-                            </div>
-                            <!-- HTML -->
-                            <div class="flex items-center justify-center">
-                                <img src="assets/images/icon/html_icon.png" alt="HTML"
-                                    class="w-12 h-12 object-contain hover:scale-110 transition-transform duration-300" />
-                            </div>
-                            <!-- Tailwind -->
-                            <div class="flex items-center justify-center">
-                                <img src="assets/images/icon/tailwindscc_icon.png" alt="Tailwind"
-                                    class="w-24 h-24 object-contain hover:scale-110 transition-transform duration-300" />
-                            </div>
-                            <!-- JavaScript -->
-                            <div class="flex items-center justify-center">
-                                <img src="assets/images/icon/javascript_icon.png" alt="JavaScript"
-                                    class="w-14 h-14 object-contain hover:scale-110 transition-transform duration-300" />
-                            </div>
-                            <!-- PostgreSQL -->
-                            <div class="flex items-center justify-center">
-                                <img src="assets/images/icon/postgresql_icon.png" alt="PostgreSQL"
-                                    class="w-12 h-12 object-contain hover:scale-110 transition-transform duration-300" />
-                            </div>
-                            <!-- MySQL -->
-                            <div class="flex items-center justify-center">
-                                <img src="assets/images/icon/mysql_icon.png" alt="MySQL"
-                                    class="w-12 h-12 object-contain hover:scale-110 transition-transform duration-300" />
-                            </div>
-                            <!-- MongoDB -->
-                            <div class="flex items-center justify-center">
-                                <img src="assets/images/icon/mongodb_icon.png" alt="MongoDB"
-                                    class="w-12 h-12 object-contain hover:scale-110 transition-transform duration-300" />
+                                    <!-- Bootstrap -->
+                                    <div
+                                        class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700">
+                                        <div
+                                            class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white">
+                                            <img src="assets/images/icon/bootsraps_icon.png" alt="Bootstrap"
+                                                class="w-10 h-10 object-contain" />
+                                        </div>
+                                        <span class="text-sm font-medium text-gray-300 mt-auto">Bootstrap</span>
+                                    </div>
+
+                                    <!-- HTML -->
+                                    <div
+                                        class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700">
+                                        <div
+                                            class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white">
+                                            <img src="assets/images/icon/html_icon.png" alt="HTML"
+                                                class="w-10 h-10 object-contain" />
+                                        </div>
+                                        <span class="text-sm font-medium text-gray-300 mt-auto">HTML</span>
+                                    </div>
+
+                                    <!-- Tailwind -->
+                                    <div
+                                        class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700">
+                                        <div
+                                            class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white">
+                                            <img src="assets/images/icon/tailwindscc_icon.png" alt="Tailwind"
+                                                class="w-16 h-16 object-contain" />
+                                        </div>
+                                        <span class="text-sm font-medium text-gray-300 mt-auto">Tailwind</span>
+                                    </div>
+
+                                    <!-- JavaScript -->
+                                    <div
+                                        class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700">
+                                        <div
+                                            class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white">
+                                            <img src="assets/images/icon/javascript_icon.png" alt="JavaScript"
+                                                class="w-12 h-12 object-contain" />
+                                        </div>
+                                        <span class="text-sm font-medium text-gray-300 mt-auto">JavaScript</span>
+                                    </div>
+
+                                    <!-- PostgreSQL -->
+                                    <div
+                                        class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700">
+                                        <div
+                                            class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white">
+                                            <img src="assets/images/icon/postgresql_icon.png" alt="PostgreSQL"
+                                                class="w-10 h-10 object-contain" />
+                                        </div>
+                                        <span class="text-sm font-medium text-gray-300 mt-auto">PostgreSQL</span>
+                                    </div>
+
+                                    <!-- MySQL -->
+                                    <div
+                                        class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700">
+                                        <div
+                                            class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white">
+                                            <img src="assets/images/icon/mysql_icon.png" alt="MySQL"
+                                                class="w-10 h-10 object-contain" />
+                                        </div>
+                                        <span class="text-sm font-medium text-gray-300 mt-auto">MySQL</span>
+                                    </div>
+
+                                    <!-- MongoDB -->
+                                    <div
+                                        class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700">
+                                        <div
+                                            class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white">
+                                            <img src="assets/images/icon/mongodb_icon.png" alt="MongoDB"
+                                                class="w-10 h-16 object-contain" />
+                                        </div>
+                                        <span class="text-sm font-medium text-gray-300 mt-auto">MongoDB</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
                     </div>
 
-                    <!-- Image -->
                     <div class="flex justify-center">
                         <img src="assets/images/about_me-removebg.png" alt="About Me"
-                            class="w-72 md:w-[22rem] rounded-xl shadow-lg hover:scale-105 transition-transform duration-300" />
+                            class="w-72 md:w-[22rem] rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 border border-gray-700" />
                     </div>
                 </div>
             </div>
         </section>
 
-
-
-
     </main>
-    <script src="./dist/js/flowbite.min.js"></script>
-
+    <!-- <script src="./node_modules/flowbite/dist/flowbite.min.js"></script> -->
+    <script src="dist/js/flowbite.min.js"></script>
 </body>
 
 </html>
