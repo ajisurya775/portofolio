@@ -1848,6 +1848,26 @@ input:checked + .toggle-bg {
   width: 18rem;
 }
 
+.w-\[50rem\] {
+  width: 50rem;
+}
+
+.w-\[30rm\] {
+  width: 30rm;
+}
+
+.w-\[30rem\] {
+  width: 30rem;
+}
+
+.w-\[25rem\] {
+  width: 25rem;
+}
+
+.w-\[2rem\] {
+  width: 2rem;
+}
+
 .max-w-screen-xl {
   max-width: 1280px;
 }

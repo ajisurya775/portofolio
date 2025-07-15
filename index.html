@@ -100,7 +100,7 @@
                     <div class="mx-auto">
                         <img src="assets/images/profile_ajisurya.jpg" alt="image"
                             class="rounded-full w-36 md:w-80 border-4 border-white shadow-lg hover:scale-105 transition-transform duration-300"
-                            data-aos="fade-up">
+                            data-aos="flip-down">
                     </div>
 
                     <div class="w-full md:w-96 mx-auto text-center md:text-left">
@@ -125,7 +125,8 @@
 
                 <div class="grid md:grid-cols-2 gap-10 items-center">
                     <div class="space-y-6">
-                        <p class="sm:text-lg leading-relaxed text-gray-300 text-center md:text-left sm:text-center">
+                        <p class="sm:text-lg leading-relaxed text-gray-300 text-center md:text-left sm:text-center"
+                            data-aos="fade-down">
                             I am a Backend Developer with over 3 years of experience in building web-based systems using
                             PHP (Laravel), MySQL, and REST APIs. I focus on code efficiency, optimized database
                             structures,
@@ -231,7 +232,7 @@
 
                     </div>
 
-                    <div class="flex justify-center">
+                    <div class="flex justify-center" data-aos="flip-left">
                         <img src="assets/images/about_me-removebg.png" alt="About Me"
                             class="w-64 md:w-[22rem] rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 border border-gray-700" />
                     </div>
@@ -256,7 +257,7 @@
                 </div>
 
                 <!-- SLIDER WRAPPER -->
-                <div class=" overflow-x-hidden w-full mt-6">
+                <div class=" overflow-x-hidden w-full mt-6" data-aos="zoom-out">
                     <div id="slider"
                         class="flex gap-6 transition-all duration-300 ease-in-out overflow-x-hidden scroll-smooth snap-x">
                         <!-- Project 1 -->
@@ -309,12 +310,12 @@
             <div class="container mx-auto px-6">
                 <h1 class="text-3xl md:text-4xl font-bold mb-12 text-center text-white">Contact Me</h1>
                 <div class="grid md:grid-cols-2 gap-5 items-start">
-                    <div class="flex justify-center">
-                        <img src="assets/images/contact.png" class="object-contain w-72" alt="" srcset="">
+                    <div class="flex justify-center bg-gray-800 rounded-2xl shadow-lg" data-aos="flip-left">
+                        <img src="assets/images/contact.png" class="object-contain w-[22rem] " alt="" srcset="">
                     </div>
                     <!-- Social Media -->
-                    <div
-                        class="bg-gray-800 p-8 rounded-2xl shadow-lg text-white flex flex-col justify-center items-center gap-6 hover:shadow-2xl transition duration-300">
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-lg text-white flex flex-col justify-center items-center gap-6 hover:shadow-2xl transition duration-300"
+                        data-aos="flip-right">
                         <h2 class="text-2xl font-semibold text-center">My Social Media</h2>
                         <p class="text-center text-gray-400">Feel free to connect with me through my social platforms
                         </p>
@@ -333,7 +334,7 @@
                             </a>
                         </div>
                         <div class="mt-6 space-y-2 text-sm text-gray-400 text-center">
-                            <p><i class="fa fa-envelope mr-2"></i>ajisurya331@example.com</p>
+                            <p><i class="fa fa-envelope mr-2"></i>ajisurya331@gmail.com</p>
                             <p><i class="fa fa-map-marker mr-2"></i>Medan Sumatra Utara, Indonesia</p>
                         </div>
                     </div>
@@ -365,7 +366,10 @@
     </script>
 
     <script>
-        AOS.init();
+        AOS.init({
+            once: false,
+            duration: 2000,
+        });
     </script>
 </body>
 
