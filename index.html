@@ -346,13 +346,11 @@
     <script>
         window.addEventListener('load', function () {
             const loading = document.getElementById('loading-screen');
-            // Tambahkan kelas transisi agar tidak tiba-tiba hilang
             loading.classList.add('opacity-0');
 
-            // Setelah transisi 700ms selesai, hapus elemen dari tampilan
             setTimeout(() => {
                 loading.style.display = 'none';
-            }, 700);
+            }, 2000);
         });
     </script>
 
