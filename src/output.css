@@ -1744,6 +1744,34 @@ input:checked + .toggle-bg {
   height: 175px;
 }
 
+.h-\[150px\] {
+  height: 150px;
+}
+
+.h-\[100px\] {
+  height: 100px;
+}
+
+.h-\[130px\] {
+  height: 130px;
+}
+
+.h-\[120px\] {
+  height: 120px;
+}
+
+.h-\[110px\] {
+  height: 110px;
+}
+
+.h-\[105px\] {
+  height: 105px;
+}
+
+.h-\[115px\] {
+  height: 115px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1810,6 +1838,14 @@ input:checked + .toggle-bg {
 
 .w-\[21rem\] {
   width: 21rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-72 {
+  width: 18rem;
 }
 
 .max-w-screen-xl {
@@ -1986,6 +2022,14 @@ input:checked + .toggle-bg {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2199,6 +2243,11 @@ input:checked + .toggle-bg {
      object-fit: contain;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -2271,6 +2320,16 @@ input:checked + .toggle-bg {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-9 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
 }
 
 .pb-4 {
@@ -2405,6 +2464,11 @@ input:checked + .toggle-bg {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity, 1));
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity, 1));
 }
 
 .opacity-0 {
@@ -2758,6 +2822,21 @@ input:checked + .toggle-bg {
   .sm\:text-center {
     text-align: center;
   }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2832,6 +2911,16 @@ input:checked + .toggle-bg {
     line-height: 2.5rem;
   }
 
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .md\:text-indigo-400 {
     --tw-text-opacity: 1;
     color: rgb(129 140 248 / var(--tw-text-opacity, 1));
@@ -2844,6 +2933,13 @@ input:checked + .toggle-bg {
   .md\:hover\:text-indigo-400:hover {
     --tw-text-opacity: 1;
     color: rgb(129 140 248 / var(--tw-text-opacity, 1));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
