@@ -1,78 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./src/output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./dist/css/aos.css" />
-</head>
+  </head>
 
-<body class="font-poppins bg-gray-900 text-gray-100">
-
-
+  <body class="font-poppins bg-gray-900 text-gray-100">
     <!-- Loading Overlay -->
-    <div id="loading-screen" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70">
-        <div class="text-center">
-            <svg class="w-12 h-12 text-white animate-spin mx-auto mb-4 fill-blue-500" viewBox="0 0 100 101" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
-                    fill="currentColor" />
-                <path
-                    d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
-                    fill="currentFill" />
-            </svg>
-            <p class="text-white text-lg font-semibold animate-pulse">Please wait...</p>
-        </div>
+    <div
+      id="loading-screen"
+      class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
+    >
+      <div class="text-center">
+        <svg
+          class="w-12 h-12 text-white animate-spin mx-auto mb-4 fill-blue-500"
+          viewBox="0 0 100 101"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+            fill="currentColor"
+          />
+          <path
+            d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+            fill="currentFill"
+          />
+        </svg>
+        <p class="text-white text-lg font-semibold animate-pulse">
+          Please wait...
+        </p>
+      </div>
     </div>
 
     <header>
-        <nav class="bg-gray-800 border-b border-gray-700 z-10 shadow-sm fixed w-full">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-indigo-400">Alex</span>
-                </a>
-                <button data-collapse-toggle="navbar-default" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                    aria-controls="navbar-default" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 1h15M1 7h15M1 13h15" />
-                    </svg>
-                </button>
-                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                    <ul
-                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-700 rounded-lg bg-gray-800 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-                        <li>
-                            <a href="#"
-                                class="block py-2 mt-2 px-3 text-white bg-indigo-600 rounded md:bg-transparent md:text-indigo-400 md:p-0"
-                                aria-current="page">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about-me"
-                                class="block py-2 mt-2 px-3 text-gray-400 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-indigo-400 md:p-0">About</a>
-                        </li>
-                        <li>
-                            <a href="#portofolio"
-                                class="block py-2 mt-2 px-3 text-gray-400 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-indigo-400 md:p-0">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#contact"
-                                class="block py-2 mt-2 px-3 text-gray-400 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-indigo-400 md:p-0">Contact</a>
-                        </li>
-                        <!-- <li>
+      <nav
+        class="bg-gray-800 border-b border-gray-700 z-10 shadow-sm fixed w-full"
+      >
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap text-indigo-400"
+              >Alex</span
+            >
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-700 rounded-lg bg-gray-800 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 mt-2 px-3 text-white bg-indigo-600 rounded md:bg-transparent md:text-indigo-400 md:p-0"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about-me"
+                  class="block py-2 mt-2 px-3 text-gray-400 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-indigo-400 md:p-0"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portofolio"
+                  class="block py-2 mt-2 px-3 text-gray-400 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-indigo-400 md:p-0"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="block py-2 mt-2 px-3 text-gray-400 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-indigo-400 md:p-0"
+                  >Contact</a
+                >
+              </li>
+              <!-- <li>
                             <button id="theme-toggle" type="button"
                                 class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 border border-gray-700 hover:text-gray-900 dark:hover:text-white">
                                 <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor"
@@ -87,267 +133,420 @@
                                 </svg>
                             </button>
                         </li> -->
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section class="py-20 bg-gradient-to-br from-gray-800 to-gray-900">
-            <div class="container mx-auto">
-                <div class="grid md:grid-cols-2 justify-between items-center gap-10 py-10">
-                    <div class="mx-auto">
-                        <img src="assets/images/profile_ajisurya.jpg" alt="image"
-                            class="rounded-full w-36 md:w-80 border-4 border-white shadow-lg hover:scale-105 transition-transform duration-300"
-                            data-aos="flip-down">
-                    </div>
-
-                    <div class="w-full md:w-96 mx-auto text-center md:text-left">
-                        <h1 class="text-4xl font-bold text-white">Hello, I'm Ajisurya</h1>
-                        <p class="mt-3 text-gray-300">A passionate web developer with a love for creating dynamic and
-                            responsive web applications.</p>
-                        <div class="flex justify-center">
-                            <a href="#about-me"
-                                class="mt-5 block w-52 md:w-full text-center py-3 px-6 bg-indigo-600 text-white rounded-md shadow hover:bg-indigo-700 transition-colors duration-300">
-                                Get Started
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
+      <section class="py-20 bg-gradient-to-br from-gray-800 to-gray-900">
+        <div class="container mx-auto">
+          <div
+            class="grid md:grid-cols-2 justify-between items-center gap-10 py-10"
+          >
+            <div class="mx-auto">
+              <img
+                src="assets/images/profile_ajisurya.jpg"
+                alt="image"
+                class="rounded-full w-36 md:w-80 border-4 border-white shadow-lg hover:scale-105 transition-transform duration-300"
+                data-aos="flip-down"
+              />
             </div>
-        </section>
 
-        <section class="py-20 bg-gray-800" id="about-me">
-            <div class="container mx-auto px-6">
-                <h1 class="text-3xl md:text-4xl font-bold mb-10 text-center text-white">About Me</h1>
-
-                <div class="grid md:grid-cols-2 gap-10 items-center">
-                    <div class="space-y-6 order-2 md:order-1">
-                        <p class="sm:text-lg leading-relaxed text-gray-300 text-center md:text-left sm:text-center"
-                            data-aos="fade-down">
-                            I am a Backend Developer with over 2 years of experience in building web-based systems using
-                            PHP (Laravel), MySQL, and REST APIs. I focus on code efficiency, optimized database
-                            structures,
-                            and reliable system integration. My commitment is to deliver solutions that are stable,
-                            scalable,
-                            and easy to maintain.
-                        </p>
-
-                        <h1 class="font-bold text-2xl text-center md:text-left">My Skill</h1>
-                        <div class="overflow-x-hidden pb-4 mt-3 w-80 md:w-full">
-                            <div id="skillScroll" class="animate-scroll">
-                                <div class="flex gap-4 mx-auto px-4">
-                                    <!-- Laravel -->
-                                    <div
-                                        class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700">
-                                        <div
-                                            class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white">
-                                            <img src="assets/images/icon/laravel_icon.png" alt="Laravel"
-                                                class="w-16 h-16 object-contain" />
-                                        </div>
-                                        <span class="text-sm font-medium text-gray-300 mt-auto">Laravel</span>
-                                    </div>
-
-                                    <!-- Bootstrap -->
-                                    <div
-                                        class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700">
-                                        <div
-                                            class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white">
-                                            <img src="assets/images/icon/bootsraps_icon.png" alt="Bootstrap"
-                                                class="w-10 h-10 object-contain" />
-                                        </div>
-                                        <span class="text-sm font-medium text-gray-300 mt-auto">Bootstrap</span>
-                                    </div>
-
-                                    <!-- HTML -->
-                                    <div
-                                        class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700">
-                                        <div
-                                            class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white">
-                                            <img src="assets/images/icon/html_icon.png" alt="HTML"
-                                                class="w-10 h-10 object-contain" />
-                                        </div>
-                                        <span class="text-sm font-medium text-gray-300 mt-auto">HTML</span>
-                                    </div>
-
-                                    <!-- Tailwind -->
-                                    <div
-                                        class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700">
-                                        <div
-                                            class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white">
-                                            <img src="assets/images/icon/tailwindscc_icon.png" alt="Tailwind"
-                                                class="w-16 h-16 object-contain" />
-                                        </div>
-                                        <span class="text-sm font-medium text-gray-300 mt-auto">Tailwind</span>
-                                    </div>
-
-                                    <!-- JavaScript -->
-                                    <div
-                                        class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700">
-                                        <div
-                                            class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white">
-                                            <img src="assets/images/icon/javascript_icon.png" alt="JavaScript"
-                                                class="w-12 h-12 object-contain" />
-                                        </div>
-                                        <span class="text-sm font-medium text-gray-300 mt-auto">JavaScript</span>
-                                    </div>
-
-                                    <!-- PostgreSQL -->
-                                    <div
-                                        class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700">
-                                        <div
-                                            class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white">
-                                            <img src="assets/images/icon/postgresql_icon.png" alt="PostgreSQL"
-                                                class="w-10 h-10 object-contain" />
-                                        </div>
-                                        <span class="text-sm font-medium text-gray-300 mt-auto">PostgreSQL</span>
-                                    </div>
-
-                                    <!-- MySQL -->
-                                    <div
-                                        class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700">
-                                        <div
-                                            class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white">
-                                            <img src="assets/images/icon/mysql_icon.png" alt="MySQL"
-                                                class="w-10 h-10 object-contain" />
-                                        </div>
-                                        <span class="text-sm font-medium text-gray-300 mt-auto">MySQL</span>
-                                    </div>
-
-                                    <!-- MongoDB -->
-                                    <div
-                                        class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700">
-                                        <div
-                                            class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white">
-                                            <img src="assets/images/icon/mongodb_icon.png" alt="MongoDB"
-                                                class="w-10 h-16 object-contain" />
-                                        </div>
-                                        <span class="text-sm font-medium text-gray-300 mt-auto">MongoDB</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="flex justify-center order-1 md:order-2" data-aos="flip-left">
-                        <img src="assets/images/about_me-removebg.png" alt="About Me"
-                            class="w-64 md:w-[22rem] rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 border border-gray-700" />
-                    </div>
-                </div>
+            <div class="w-full md:w-96 mx-auto text-center md:text-left">
+              <h1 class="sm:text-4xl text-2xl font-semibold text-white">
+                Hello, I'm Ajisurya
+              </h1>
+              <p class="mt-3 sm:text-lg text-base text-gray-300">
+                A passionate web developer with a love for creating dynamic and
+                responsive web applications.
+              </p>
+              <div class="flex justify-center">
+                <a
+                  href="#about-me"
+                  class="mt-5 block w-52 md:w-full text-center py-3 px-6 bg-indigo-600 text-white rounded-md shadow hover:bg-indigo-700 transition-colors duration-300"
+                >
+                  Get Started
+                </a>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="py-20 bg-gradient-to-tl from-gray-800 to-gray-900" id="portofolio">
-            <div class="container mx-auto px-6">
-                <div class="flex justify-between items-center">
-                    <h2 class="text-3xl font-semibold">Portofolio</h2>
-                    <div class="flex gap-3">
-                        <button id="slide-left"
-                            class="border rounded-xl w-12 h-12 flex items-center justify-center text-white hover:bg-gray-700">
-                            <i class="fa fa-chevron-left"></i>
-                        </button>
-                        <button id="slide-right"
-                            class="border rounded-xl w-12 h-12 flex items-center justify-center text-white hover:bg-gray-700">
-                            <i class="fa fa-chevron-right"></i>
-                        </button>
+      <section class="py-20 bg-gray-800" id="about-me">
+        <div class="container mx-auto px-6">
+          <h1
+            class="md:text-4xl text-2xl font-semibold mb-10 text-center text-white"
+          >
+            About Me
+          </h1>
+
+          <div class="grid md:grid-cols-2 gap-10 items-center">
+            <div class="space-y-6 order-2 md:order-1">
+              <p
+                class="sm:text-lg text-base leading-relaxed text-gray-300 text-center md:text-left sm:text-center"
+                data-aos="fade-down"
+              >
+                I am a Backend Developer with over 2 years of experience in
+                building web-based systems using PHP (Laravel), MySQL, and REST
+                APIs. I focus on code efficiency, optimized database structures,
+                and reliable system integration. My commitment is to deliver
+                solutions that are stable, scalable, and easy to maintain.
+              </p>
+
+              <h1
+                class="font-bold sm:text-4xl text-2xl text-center md:text-left"
+              >
+                My Skill
+              </h1>
+              <div class="overflow-x-hidden pb-4 mt-3 w-80 md:w-full">
+                <div id="skillScroll" class="animate-scroll">
+                  <div class="flex gap-4 mx-auto px-4">
+                    <!-- Laravel -->
+                    <div
+                      class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700"
+                    >
+                      <div
+                        class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white"
+                      >
+                        <img
+                          src="assets/images/icon/laravel_icon.png"
+                          alt="Laravel"
+                          class="w-16 h-16 object-contain"
+                        />
+                      </div>
+                      <span class="text-sm font-medium text-gray-300 mt-auto"
+                        >Laravel</span
+                      >
                     </div>
-                </div>
 
-                <!-- SLIDER WRAPPER -->
-                <div class=" overflow-x-hidden w-full mt-6" data-aos="zoom-out">
-                    <div id="slider"
-                        class="flex gap-6 transition-all duration-300 ease-in-out overflow-x-hidden scroll-smooth snap-x">
-                        <!-- Project 1 -->
-                        <div class="w-[22rem] shrink-0 bg-white dark:bg-gray-800 rounded-lg shadow p-5 snap-start">
-                            <img src="assets/images/project_clinic.png" alt="Project 1"
-                                class="rounded mb-4 w-full h-[150px] object-cover">
-
-                            <h3 class="text-lg sm:text-xl md:text-2xl font-bold mb-2 text-black dark:text-white">
-                                Sistem Transaction Clinic
-                            </h3>
-
-                            <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400">
-                                Laravel + MySQL | Transaction, Cart, Summary, Branch, merchant and admin.
-                            </p>
-                        </div>
-
-                        <!-- Project 2 -->
-                        <div class="w-[22rem] shrink-0 bg-white dark:bg-gray-800 rounded-lg shadow p-5 snap-start">
-                            <img src="assets/images/project_ud_rizki.png" alt="Project 2"
-                                class="rounded mb-4 h-[150px] w-[600px] object-cover">
-                            <h3 class="text-xl font-bold mb-2">Toko Bangunan UD.Rizki</h3>
-                            <p class="text-gray-600 dark:text-gray-400">Boostarp 4 + Laravel 8 + mysql + mailtrap |
-                                Checkout, Cart,
-                                and admin dashboard.</p>
-                        </div>
-
-                        <!-- Project 3 -->
-                        <div class="w-[22rem] shrink-0 bg-white dark:bg-gray-800 rounded-lg shadow p-5 snap-start">
-                            <img src="assets/images/project_portofolio.png" alt="Project 3"
-                                class="rounded mb-4 h-[150px] w-[600px] object-cover">
-                            <h3 class="text-xl font-bold mb-2">Website Portofolio</h3>
-                            <p class="text-gray-600 dark:text-gray-400">A static frontend built with Tailwind and subtle
-                                animations for personal presentation.</p>
-                        </div>
-
-                        <!-- Project 4 -->
-                        <div class="w-[22rem] shrink-0 bg-white dark:bg-gray-800 rounded-lg shadow p-5 snap-start">
-                            <img src="assets/images/project_learn_touravel.png" alt="Project 4"
-                                class="rounded mb-4 h-[150px] w-[600px] object-cover">
-                            <h3 class="text-xl font-bold mb-2">Touravel landing page</h3>
-                            <p class="text-gray-600 dark:text-gray-400">A static frontend built with Bootstrap 5,
-                                javascript, css and animation with aos pakage</p>
-                        </div>
+                    <!-- Bootstrap -->
+                    <div
+                      class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700"
+                    >
+                      <div
+                        class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white"
+                      >
+                        <img
+                          src="assets/images/icon/bootsraps_icon.png"
+                          alt="Bootstrap"
+                          class="w-10 h-10 object-contain"
+                        />
+                      </div>
+                      <span class="text-sm font-medium text-gray-300 mt-auto"
+                        >Bootstrap</span
+                      >
                     </div>
+
+                    <!-- HTML -->
+                    <div
+                      class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700"
+                    >
+                      <div
+                        class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white"
+                      >
+                        <img
+                          src="assets/images/icon/html_icon.png"
+                          alt="HTML"
+                          class="w-10 h-10 object-contain"
+                        />
+                      </div>
+                      <span class="text-sm font-medium text-gray-300 mt-auto"
+                        >HTML</span
+                      >
+                    </div>
+
+                    <!-- Tailwind -->
+                    <div
+                      class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700"
+                    >
+                      <div
+                        class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white"
+                      >
+                        <img
+                          src="assets/images/icon/tailwindscc_icon.png"
+                          alt="Tailwind"
+                          class="w-16 h-16 object-contain"
+                        />
+                      </div>
+                      <span class="text-sm font-medium text-gray-300 mt-auto"
+                        >Tailwind</span
+                      >
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div
+                      class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700"
+                    >
+                      <div
+                        class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white"
+                      >
+                        <img
+                          src="assets/images/icon/javascript_icon.png"
+                          alt="JavaScript"
+                          class="w-12 h-12 object-contain"
+                        />
+                      </div>
+                      <span class="text-sm font-medium text-gray-300 mt-auto"
+                        >JavaScript</span
+                      >
+                    </div>
+
+                    <!-- PostgreSQL -->
+                    <div
+                      class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700"
+                    >
+                      <div
+                        class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white"
+                      >
+                        <img
+                          src="assets/images/icon/postgresql_icon.png"
+                          alt="PostgreSQL"
+                          class="w-10 h-10 object-contain"
+                        />
+                      </div>
+                      <span class="text-sm font-medium text-gray-300 mt-auto"
+                        >PostgreSQL</span
+                      >
+                    </div>
+
+                    <!-- MySQL -->
+                    <div
+                      class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700"
+                    >
+                      <div
+                        class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white"
+                      >
+                        <img
+                          src="assets/images/icon/mysql_icon.png"
+                          alt="MySQL"
+                          class="w-10 h-10 object-contain"
+                        />
+                      </div>
+                      <span class="text-sm font-medium text-gray-300 mt-auto"
+                        >MySQL</span
+                      >
+                    </div>
+
+                    <!-- MongoDB -->
+                    <div
+                      class="flex flex-col items-center w-28 h-40 p-4 rounded-xl bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 group border border-gray-700"
+                    >
+                      <div
+                        class="w-20 h-20 flex items-center justify-center rounded-lg mb-3 transition-all duration-300 group-hover:scale-110 bg-white"
+                      >
+                        <img
+                          src="assets/images/icon/mongodb_icon.png"
+                          alt="MongoDB"
+                          class="w-10 h-16 object-contain"
+                        />
+                      </div>
+                      <span class="text-sm font-medium text-gray-300 mt-auto"
+                        >MongoDB</span
+                      >
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
 
-        <section class="py-20 bg-gradient-to-b from-gray-800 to-gray-900" id="contact">
-            <div class="container mx-auto px-6">
-                <h1 class="text-3xl md:text-4xl font-bold mb-12 text-center text-white">Contact Me</h1>
-                <div class="grid md:grid-cols-2 gap-5 items-start">
-                    <div class="flex justify-center bg-gray-800 rounded-2xl shadow-lg" data-aos="flip-left">
-                        <img src="assets/images/contact.png" class="object-contain w-[22rem] " alt="" srcset="">
-                    </div>
-                    <!-- Social Media -->
-                    <div class="bg-gray-800 p-8 rounded-2xl shadow-lg text-white flex flex-col justify-center items-center gap-6 hover:shadow-2xl transition duration-300"
-                        data-aos="flip-right">
-                        <h2 class="text-2xl font-semibold text-center">My Social Media</h2>
-                        <p class="text-center text-gray-400">Feel free to connect with me through my social platforms
-                        </p>
-                        <div class="flex justify-center gap-8 text-3xl">
-                            <a href="https://www.instagram.com/aji_surya112/" target="_blank"
-                                class="hover:text-pink-500 transition duration-300">
-                                <i class="fa fa-instagram"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/aji-surya-001192222/" target="_blank"
-                                class="hover:text-blue-400 transition duration-300">
-                                <i class="fa fa-linkedin-square"></i>
-                            </a>
-                            <a href="https://web.facebook.com/aji.surya.73345/?locale=id_ID" target="_blank"
-                                class="hover:text-blue-600 transition duration-300">
-                                <i class="fa fa-facebook-official"></i>
-                            </a>
-                        </div>
-                        <div class="mt-6 space-y-2 text-sm text-gray-400 text-center">
-                            <p><i class="fa fa-envelope mr-2"></i>ajisurya331@gmail.com</p>
-                            <p><i class="fa fa-map-marker mr-2"></i>Medan Sumatra Utara, Indonesia</p>
-                        </div>
-                    </div>
-                </div>
+            <div
+              class="flex justify-center order-1 md:order-2"
+              data-aos="flip-left"
+            >
+              <img
+                src="assets/images/about_me-removebg.png"
+                alt="About Me"
+                class="w-64 md:w-[22rem] rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 border border-gray-700"
+              />
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="py-20 bg-gradient-to-tl from-gray-800 to-gray-900"
+        id="portofolio"
+      >
+        <div class="container mx-auto px-6">
+          <div class="flex justify-between items-center">
+            <h2 class="md:text-4xl text-2xl font-semibold">Portofolio</h2>
+            <div class="flex gap-3">
+              <button
+                id="slide-left"
+                class="border rounded-xl w-12 h-12 flex items-center justify-center text-white hover:bg-gray-700"
+              >
+                <i class="fa fa-chevron-left"></i>
+              </button>
+              <button
+                id="slide-right"
+                class="border rounded-xl w-12 h-12 flex items-center justify-center text-white hover:bg-gray-700"
+              >
+                <i class="fa fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- SLIDER WRAPPER -->
+          <div class="overflow-x-hidden w-full mt-6" data-aos="zoom-out">
+            <div
+              id="slider"
+              class="flex gap-6 transition-all duration-300 ease-in-out overflow-x-hidden scroll-smooth snap-x"
+            >
+              <!-- Project 1 -->
+              <div
+                class="w-[22rem] shrink-0 bg-white dark:bg-gray-800 rounded-lg shadow p-5 snap-start"
+              >
+                <img
+                  src="assets/images/project_clinic.png"
+                  alt="Project 1"
+                  class="rounded mb-4 w-full h-[150px] object-cover"
+                />
+
+                <h3
+                  class="text-lg sm:text-xl md:text-2xl font-bold mb-2 text-black dark:text-white"
+                >
+                  Sistem Transaction Clinic
+                </h3>
+
+                <p
+                  class="text-sm sm:text-base text-gray-600 dark:text-gray-400"
+                >
+                  Laravel + MySQL | Transaction, Cart, Summary, Branch, merchant
+                  and admin.
+                </p>
+              </div>
+
+              <!-- Project 2 -->
+              <div
+                class="w-[22rem] shrink-0 bg-white dark:bg-gray-800 rounded-lg shadow p-5 snap-start"
+              >
+                <img
+                  src="assets/images/project_ud_rizki.png"
+                  alt="Project 2"
+                  class="rounded mb-4 h-[150px] w-[600px] object-cover"
+                />
+                <h3 class="text-xl font-bold mb-2">Toko Bangunan UD.Rizki</h3>
+                <p class="text-gray-600 dark:text-gray-400">
+                  Boostarp 4 + Laravel 8 + mysql + mailtrap | Checkout, Cart,
+                  and admin dashboard.
+                </p>
+              </div>
+
+              <!-- Project 3 -->
+              <div
+                class="w-[22rem] shrink-0 bg-white dark:bg-gray-800 rounded-lg shadow p-5 snap-start"
+              >
+                <img
+                  src="assets/images/project_portofolio.png"
+                  alt="Project 3"
+                  class="rounded mb-4 h-[150px] w-[600px] object-cover"
+                />
+                <h3 class="text-xl font-bold mb-2">Website Portofolio</h3>
+                <p class="text-gray-600 dark:text-gray-400">
+                  A static frontend built with Tailwind and subtle animations
+                  for personal presentation.
+                </p>
+              </div>
+
+              <!-- Project 4 -->
+              <div
+                class="w-[22rem] shrink-0 bg-white dark:bg-gray-800 rounded-lg shadow p-5 snap-start"
+              >
+                <img
+                  src="assets/images/project_learn_touravel.png"
+                  alt="Project 4"
+                  class="rounded mb-4 h-[150px] w-[600px] object-cover"
+                />
+                <h3 class="text-xl font-bold mb-2">Touravel landing page</h3>
+                <p class="text-gray-600 dark:text-gray-400">
+                  A static frontend built with Bootstrap 5, javascript, css and
+                  animation with aos pakage
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="py-20 bg-gradient-to-b from-gray-800 to-gray-900"
+        id="contact"
+      >
+        <div class="container mx-auto px-6">
+          <h1
+            class="md:text-4xl text-2xl font-semibold mb-12 text-center text-white"
+          >
+            Contact Me
+          </h1>
+          <div class="grid md:grid-cols-2 gap-5 items-start">
+            <div
+              class="flex justify-center bg-gray-800 rounded-2xl shadow-lg"
+              data-aos="flip-left"
+            >
+              <img
+                src="assets/images/contact.png"
+                class="object-contain w-[22rem]"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <!-- Social Media -->
+            <div
+              class="bg-gray-800 p-8 rounded-2xl shadow-lg text-white flex flex-col justify-center items-center gap-6 hover:shadow-2xl transition duration-300"
+              data-aos="flip-right"
+            >
+              <h2 class="md:text-4xl text-2xl font-semibold text-center">
+                My Social Media
+              </h2>
+              <p class="text-center text-gray-400">
+                Feel free to connect with me through my social platforms
+              </p>
+              <div class="flex justify-center gap-8 text-3xl">
+                <a
+                  href="https://www.instagram.com/aji_surya112/"
+                  target="_blank"
+                  class="hover:text-pink-500 transition duration-300"
+                >
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/aji-surya-001192222/"
+                  target="_blank"
+                  class="hover:text-blue-400 transition duration-300"
+                >
+                  <i class="fa fa-linkedin-square"></i>
+                </a>
+                <a
+                  href="https://web.facebook.com/aji.surya.73345/?locale=id_ID"
+                  target="_blank"
+                  class="hover:text-blue-600 transition duration-300"
+                >
+                  <i class="fa fa-facebook-official"></i>
+                </a>
+              </div>
+              <div class="mt-6 space-y-2 text-sm text-gray-400 text-center">
+                <p><i class="fa fa-envelope mr-2"></i>ajisurya331@gmail.com</p>
+                <p>
+                  <i class="fa fa-map-marker mr-2"></i>Medan Sumatra Utara,
+                  Indonesia
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="py-9 text-center bg-gray-800">
-            <p class="text-gray-400">© 2025 Ajisurya. All rights reserved.</p>
-            <p class="text-gray-500">Made with <i class="fa fa-heart text-red-500"></i> using Tailwind CSS</p>
-        </div>
+      <div class="py-9 text-center bg-gray-800">
+        <p class="text-gray-400">© 2025 Ajisurya. All rights reserved.</p>
+        <p class="text-gray-500">
+          Made with <i class="fa fa-heart text-red-500"></i> using Tailwind CSS
+        </p>
+      </div>
     </footer>
 
     <script src="dist/js/flowbite.min.js"></script>
@@ -355,22 +554,21 @@
     <script src="assets/js/slider.js"></script>
     <script src="./dist/js/aos.js"></script>
     <script>
-        window.addEventListener('load', function () {
-            const loading = document.getElementById('loading-screen');
-            loading.classList.add('opacity-0');
+      window.addEventListener("load", function () {
+        const loading = document.getElementById("loading-screen");
+        loading.classList.add("opacity-0");
 
-            setTimeout(() => {
-                loading.style.display = 'none';
-            }, 5000);
-        });
+        setTimeout(() => {
+          loading.style.display = "none";
+        }, 5000);
+      });
     </script>
 
     <script>
-        AOS.init({
-            once: false,
-            duration: 2000,
-        });
+      AOS.init({
+        once: false,
+        duration: 2000,
+      });
     </script>
-</body>
-
+  </body>
 </html>
